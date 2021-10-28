@@ -5,7 +5,12 @@ export const Navbar = () => {
   return (
     <ul className={style.ul}>
       <li className={style.li}>About</li>
-      <li className={style.li}>Projects</li>
+      <li
+        className={style.li}
+        onClick={() => window.scrollTo({ top: 420, behavior: "smooth" })}
+      >
+        Projects
+      </li>
       <li className={style.li}>Contact</li>
     </ul>
   );
