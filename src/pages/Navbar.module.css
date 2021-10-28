@@ -1,0 +1,21 @@
+.ul {
+    background-color: #3F0071;
+    color: white;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    box-shadow: -3px 6px 8px black;
+}
+.li {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    transition: 0.4s;
+    padding: 1vw 0.5vw 1vw 0.5vw;
+    margin: 0;
+}
+.li:hover {
+    background-color: #610094;
+    cursor: pointer;
+    transform: scale(1.1);
+}
