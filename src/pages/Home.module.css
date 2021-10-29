@@ -71,11 +71,23 @@ p {
 .project:hover {
     box-shadow: 2px 2px 2px black;
     transform: scale(1.003);
-    cursor: pointer;
 }
 .projectImg {   
     margin: 0 2vw 0 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    visibility: visible;
+    cursor: pointer;
+    padding: 20px;
+    margin: 0 5px 0 5px;
+}
+.button:hover {
+    background-color: blueviolet;
 }
