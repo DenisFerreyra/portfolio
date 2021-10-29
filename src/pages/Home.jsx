@@ -1,13 +1,18 @@
 import Particles from "react-particles-js";
 import params from "../particles-config";
-import img_one from "../img/1.jpg";
 import img_two from "../img/2.jpg";
 import img_three from "../img/3.jpg";
-import React from "react";
+import React, { useState } from "react";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import style from "./Home.module.css";
 
 export const Home = () => {
+  const [clicked, setClicked] = useState(false);
+
+  function handleImg() {
+    setClicked(!clicked);
+  }
+
   return (
     <>
       <Particles params={params} className="particles__container"></Particles>
@@ -29,11 +34,30 @@ export const Home = () => {
       </div>
       <div className={style.containerProjects}>
         <h2>MI PROJECTS</h2>
-        <h4>16Bit GameStore (click here)</h4>
-        <div>
-          <img src={img_one} alt="img" />
-          <img src={img_two} alt="img" />
-          <img src={img_three} alt="img" />
+        <div className={style.project}>
+          <h4>16BIT GAMESTORE</h4>
+          <div className={style.projectImg}>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <img
+                className={style.img}
+                onClick={handleImg}
+                src={img_two}
+                alt="img"
+              />
+              <img
+                className={style.img}
+                onClick={handleImg}
+                src={img_three}
+                alt="img"
+              />
+            </div>
+            <div style={{textAlign:"center", padding:"10px"}}>
+              This is a groupal project maded for the Henry's bootcamp, in this
+              project we worked in front-end with: TypeScript, React, Redux, and
+              in the back-end we worked with JavaScript, Express, NodeJS,
+              PostgreSQL and Sequelize.
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -37,6 +37,10 @@ h3 {
     padding: 0;
     margin: 1vw 0 0 0;
 }
+h4 {
+    font-size: 1.2vw;
+    text-align: center;
+}
 p {
     margin: 8vw 22vw 0 22vw;
     font-size: 1vw;
@@ -53,12 +57,25 @@ p {
     align-items: center;
     margin-top: 10vh;
 }
-img {
-    width: 20vw;
+.img {
+    width: 28vw;
     margin: 0 1vw 2vw 1vw;
+}
+.project {
+    margin: 20px 0 0 0;
+    background-color: #33004e28;
+    width: 94%;
+    border: 2px solid black;
     transition: 0.2s;
 }
-img:hover {
-    transform: scale(1.02);
+.project:hover {
     box-shadow: 2px 2px 2px black;
+    transform: scale(1.003);
+    cursor: pointer;
+}
+.projectImg {   
+    margin: 0 2vw 0 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
