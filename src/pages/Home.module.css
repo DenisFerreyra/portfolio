@@ -50,6 +50,12 @@ p {
     cursor: pointer;
     margin-top: 15vh;
 }
+.buttonSide {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 1000;
+}
 .containerProjects {
     color: white;
     display: flex;

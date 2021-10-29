@@ -5,7 +5,7 @@ import img_three from "../img/3.jpg";
 import img_pi_one from "../img/1.png";
 import img_pi_two from "../img/2.png";
 import React, { useState } from "react";
-import { BsFillArrowDownCircleFill } from "react-icons/bs";
+import { BsFillArrowDownCircleFill, BsFillArrowUpCircleFill } from "react-icons/bs";
 import style from "./Home.module.css";
 
 export const Home = () => {
@@ -25,7 +25,7 @@ export const Home = () => {
           are interested, contact me in the form below. Regards.
         </p>
         <BsFillArrowDownCircleFill
-          onClick={() => window.scrollTo({ top: 1036, behavior: "smooth" })}
+          onClick={() => window.scrollTo({ top: 1038, behavior: "smooth" })}
           size={100}
           className={style.buttonDown}
         />
@@ -49,7 +49,10 @@ export const Home = () => {
               <a href="https://16-bit-gamestore.vercel.app/" target="_blank">
                 <button className={style.button}>VIEW PROJECT</button>
               </a>
-              <a href="https://github.com/DenisOrlando/16Bit-GameStore" target="_blank">
+              <a
+                href="https://github.com/DenisOrlando/16Bit-GameStore"
+                target="_blank"
+              >
                 <button className={style.button}>GITHUB REPO</button>
               </a>
             </div>
@@ -69,12 +72,20 @@ export const Home = () => {
                 Redux, and in the back-end we worked with JavaScript, Express,
                 NodeJS, PostgreSQL and Sequelize.
               </div>
-              <a href="https://github.com/DenisOrlando/PI-Videogames-v2" target="_blank">
+              <a
+                href="https://github.com/DenisOrlando/PI-Videogames-v2"
+                target="_blank"
+              >
                 <button className={style.button}>GITHUB REPO</button>
               </a>
             </div>
           </div>
         </div>
+      <BsFillArrowUpCircleFill
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        size={40}
+        className={style.buttonSide}
+      />
       </div>
     </>
   );

@@ -7,7 +7,7 @@ export const Navbar = () => {
       <li className={style.li}>About</li>
       <li
         className={style.li}
-        onClick={() => window.scrollTo({ top: 1036, behavior: "smooth" })}
+        onClick={() => window.scrollTo({ top: 1038, behavior: "smooth" })}
       >
         Projects
       </li>
