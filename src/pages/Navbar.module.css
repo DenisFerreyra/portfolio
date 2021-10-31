@@ -24,3 +24,9 @@
 .span {
     border-bottom: 2px solid white;
 }
+@media screen and (max-width: 720px) {
+  .ul {
+    position: absolute;
+    width: 100%;
+  }
+}

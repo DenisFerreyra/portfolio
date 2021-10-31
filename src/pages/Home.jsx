@@ -33,8 +33,8 @@ export const Home = () => {
         </p>
       </div>
       <div className={style.tech}>
-        <h3 style={{padding:"30px"}}>TECHNOLOGIES</h3>
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        <h3 style={{ padding: "30px" }}>TECHNOLOGIES</h3>
+        <div className={style.techD}>
           <div className={style.divH}>
             <div className={style.div1}>JAVASCRIPT </div>
             <SiJavascript className={style.div2} />
@@ -70,7 +70,13 @@ export const Home = () => {
         <div className={style.project}>
           <h4>16BIT GAMESTORE</h4>
           <div className={style.projectImg}>
-            <div style={{ display: "flex", flexDirection: "row" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-evenly",
+              }}
+            >
               <img className={style.img} src={img_two} alt="img" />
               <img className={style.img} src={img_three} alt="img" />
             </div>
@@ -81,15 +87,24 @@ export const Home = () => {
                 Redux, and in the back-end we worked with JavaScript, Express,
                 NodeJS, PostgreSQL and Sequelize.
               </div>
-              <a href="https://16-bit-gamestore.vercel.app/" target="_blank">
-                <button className={style.button}>VIEW PROJECT</button>
-              </a>
-              <a
-                href="https://github.com/DenisOrlando/16Bit-GameStore"
-                target="_blank"
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  marginTop: "8px",
+                }}
               >
-                <button className={style.button}>GITHUB REPO</button>
-              </a>
+                <a href="https://16-bit-gamestore.vercel.app/" target="_blank">
+                  <button className={style.button}>VIEW PROJECT</button>
+                </a>
+                <a
+                  href="https://github.com/DenisOrlando/16Bit-GameStore"
+                  target="_blank"
+                >
+                  <button className={style.button}>GITHUB REPO</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -107,12 +122,21 @@ export const Home = () => {
                 Redux, and in the back-end we worked with JavaScript, Express,
                 NodeJS, PostgreSQL and Sequelize.
               </div>
-              <a
-                href="https://github.com/DenisOrlando/PI-Videogames-v2"
-                target="_blank"
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  marginTop: "8px",
+                }}
               >
-                <button className={style.button}>GITHUB REPO</button>
-              </a>
+                <a
+                  href="https://github.com/DenisOrlando/PI-Videogames-v2"
+                  target="_blank"
+                >
+                  <button className={style.button}>GITHUB REPO</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>

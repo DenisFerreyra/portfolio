@@ -18,3 +18,8 @@ button {
 button:hover {
   background-color: blueviolet;
 }
+@media screen and (max-width: 760px) {
+  .App {
+    width: 100vw;
+  }
+}
