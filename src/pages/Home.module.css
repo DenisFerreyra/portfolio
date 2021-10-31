@@ -42,18 +42,34 @@ h4 {
     text-align: center;
 }
 p {
-    margin: 8vw 22vw 0 22vw;
+    margin: 0 26vw 0 26vw;
     font-size: 1vw;
     text-align: center;
 }
 .buttonDown {
     cursor: pointer;
     margin-top: 15vh;
+    width: 100px;
+}
+.tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vw 1vw 0 1vw;
+}
+.ulTech {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.liTech {
+    padding: 0 6px 0 6px;
 }
 .buttonSide {
     position: fixed;
     bottom: 1em;
-    right: 1em;
+    right: 0.4em;
     z-index: 1000;
 }
 .containerProjects {
@@ -84,16 +100,23 @@ p {
     flex-direction: row;
     justify-content: space-between;
 }
-.button {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
-    border-radius: 5px;
-    border: none;
-    visibility: visible;
-    cursor: pointer;
-    padding: 20px;
-    margin: 0 5px 0 5px;
+.divH {
+    background-color: red;
 }
-.button:hover {
-    background-color: blueviolet;
+@keyframes aparicionDos {
+    0% {
+        visibility: 0%;
+    }
+    100% {
+        visibility: 100%;
+    }
+}
+.divH .logo{
+    background-color: red;
+    visibility: hidden;
+    transition: aparicion 3s ease-in-out;;
+}
+.divH:hover .logo {
+    background-color: red;
+    visibility: visible;
 }

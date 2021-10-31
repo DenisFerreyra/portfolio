@@ -5,3 +5,16 @@
   right: 0px;
   z-index: 0;
 }
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  visibility: visible;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0 5px 0 5px;
+}
+button:hover {
+  background-color: blueviolet;
+}

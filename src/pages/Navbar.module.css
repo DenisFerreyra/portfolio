@@ -6,6 +6,9 @@
   list-style: none;
   margin: 0;
   box-shadow: -3px 6px 8px black;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 .li {
   margin-left: 3vw;

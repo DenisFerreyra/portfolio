@@ -4,13 +4,14 @@ import img_two from "../img/2.jpg";
 import img_three from "../img/3.jpg";
 import img_pi_one from "../img/1.png";
 import img_pi_two from "../img/2.png";
-import React, { useState } from "react";
-import { BsFillArrowDownCircleFill, BsFillArrowUpCircleFill } from "react-icons/bs";
+import React from "react";
+import {
+  BsFillArrowUpCircleFill,
+} from "react-icons/bs";
+import { SiJavascript } from "react-icons/si";
 import style from "./Home.module.css";
 
 export const Home = () => {
-  const [pointer, setClicked] = useState(false);
-
   return (
     <>
       <Particles params={params} className="particles__container"></Particles>
@@ -24,12 +25,35 @@ export const Home = () => {
           programming and I feel like I'm playing. I have a lot to offer, if you
           are interested, contact me in the form below. Regards.
         </p>
-        <BsFillArrowDownCircleFill
-          onClick={() => window.scrollTo({ top: 1038, behavior: "smooth" })}
-          size={100}
+        <button
           className={style.buttonDown}
-        />
+          onClick={() => window.scrollTo({ top: 1038, behavior: "smooth" })}
+        >
+          GO DOWN
+        </button>
+        <button
+          className={style.buttonDown}
+          onClick={() => window.scrollTo({ top: 1038, behavior: "smooth" })}
+        >
+          GO DOWN
+        </button>
       </div>
+        <div className={style.tech}>
+          TECHNOLOGIES
+          <div className={style.divH}>
+            <h3>Javascri</h3>
+            <SiJavascript className={style.logo}/>
+          </div>
+          {/* <ul className={style.ulTech}>
+            <li className={style.liTech}>JAVASCRIPT</li>
+            <li className={style.liTech}>TYPESCRIPT</li>
+            <li className={style.liTech}>REACT JS</li>
+            <li className={style.liTech}>REDUX</li>
+            <li className={style.liTech}>NODE JS</li>
+            <li className={style.liTech}>POSTGRESQL</li>
+            <li className={style.liTech}>SEQUELIZE</li>
+          </ul> */}
+        </div>
       <div className={style.containerProjects}>
         <h2>MI PROJECTS</h2>
         <div className={style.project}>
@@ -81,11 +105,11 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      <BsFillArrowUpCircleFill
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        size={40}
-        className={style.buttonSide}
-      />
+        <BsFillArrowUpCircleFill
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          size={40}
+          className={style.buttonSide}
+        />
       </div>
     </>
   );
