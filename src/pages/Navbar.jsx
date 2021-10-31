@@ -9,16 +9,16 @@ export const Navbar = () => {
         className={style.li}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
-        About
+        HOME
       </li>
       <li
         className={style.li}
-        onClick={() => window.scrollTo({ top: 1038, behavior: "smooth" })}
+        onClick={() => window.scrollTo({ top: 950, behavior: "smooth" })}
       >
-        Projects
+        PROJECTS
       </li>
       <NavLink to="/contact" style={{ textDecoration: "none", color: "white" }}>
-        <li className={style.li}>Contact</li>
+        <li className={style.li}>CONTACT</li>
       </NavLink>
     </ul>
   );

@@ -7,7 +7,7 @@
     }
 }
 .container {
-    height: 80vh;
+    height: 60vh;
     color: white;
     margin-top: 10px;
     display: flex;
@@ -52,12 +52,14 @@ p {
     width: 100px;
 }
 .tech {
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1vw 1vw 0 1vw;
 }
 .ulTech {
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -101,22 +103,29 @@ p {
     justify-content: space-between;
 }
 .divH {
-    background-color: red;
+    background-color: #8E05C2;
+    width: 150px;
+    height: 70px;
+    margin: 0 5px 0 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-@keyframes aparicionDos {
-    0% {
-        visibility: 0%;
-    }
-    100% {
-        visibility: 100%;
-    }
+.divH .div1 {
+    position: absolute;
+    transition: 0.4s; 
 }
-.divH .logo{
-    background-color: red;
-    visibility: hidden;
-    transition: aparicion 3s ease-in-out;;
+.divH:hover .div1 {
+    opacity: 0;
 }
-.divH:hover .logo {
-    background-color: red;
-    visibility: visible;
+.divH .div2 {
+    width: 100px;
+    height: 50px;
+    opacity: 0;
+    transition: 0.7s;
+}
+.divH:hover .div2 {
+    opacity: 100;
 }

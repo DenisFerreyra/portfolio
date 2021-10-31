@@ -5,10 +5,16 @@ import img_three from "../img/3.jpg";
 import img_pi_one from "../img/1.png";
 import img_pi_two from "../img/2.png";
 import React from "react";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import {
-  BsFillArrowUpCircleFill,
-} from "react-icons/bs";
-import { SiJavascript } from "react-icons/si";
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiRedux,
+  SiNodedotjs,
+  SiPostgresql,
+  SiSequelize,
+} from "react-icons/si";
 import style from "./Home.module.css";
 
 export const Home = () => {
@@ -25,35 +31,40 @@ export const Home = () => {
           programming and I feel like I'm playing. I have a lot to offer, if you
           are interested, contact me in the form below. Regards.
         </p>
-        <button
-          className={style.buttonDown}
-          onClick={() => window.scrollTo({ top: 1038, behavior: "smooth" })}
-        >
-          GO DOWN
-        </button>
-        <button
-          className={style.buttonDown}
-          onClick={() => window.scrollTo({ top: 1038, behavior: "smooth" })}
-        >
-          GO DOWN
-        </button>
       </div>
-        <div className={style.tech}>
-          TECHNOLOGIES
+      <div className={style.tech}>
+        <h3 style={{padding:"30px"}}>TECHNOLOGIES</h3>
+        <div style={{ display: "flex", flexDirection: "row" }}>
           <div className={style.divH}>
-            <h3>Javascri</h3>
-            <SiJavascript className={style.logo}/>
+            <div className={style.div1}>JAVASCRIPT </div>
+            <SiJavascript className={style.div2} />
           </div>
-          {/* <ul className={style.ulTech}>
-            <li className={style.liTech}>JAVASCRIPT</li>
-            <li className={style.liTech}>TYPESCRIPT</li>
-            <li className={style.liTech}>REACT JS</li>
-            <li className={style.liTech}>REDUX</li>
-            <li className={style.liTech}>NODE JS</li>
-            <li className={style.liTech}>POSTGRESQL</li>
-            <li className={style.liTech}>SEQUELIZE</li>
-          </ul> */}
+          <div className={style.divH}>
+            <div className={style.div1}>TYPESCRIPT </div>
+            <SiTypescript className={style.div2} />
+          </div>
+          <div className={style.divH}>
+            <div className={style.div1}>REACT</div>
+            <SiReact className={style.div2} />
+          </div>
+          <div className={style.divH}>
+            <div className={style.div1}>REDUX</div>
+            <SiRedux className={style.div2} />
+          </div>
+          <div className={style.divH}>
+            <div className={style.div1}>NODE</div>
+            <SiNodedotjs className={style.div2} />
+          </div>
+          <div className={style.divH}>
+            <div className={style.div1}>POSTGRESQL</div>
+            <SiPostgresql className={style.div2} />
+          </div>
+          <div className={style.divH}>
+            <div className={style.div1}>SEQUELIZE</div>
+            <SiSequelize className={style.div2} />
+          </div>
         </div>
+      </div>
       <div className={style.containerProjects}>
         <h2>MI PROJECTS</h2>
         <div className={style.project}>
