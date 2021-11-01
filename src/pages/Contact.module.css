@@ -13,3 +13,36 @@ label {
     width: 400px;
     margin: 6px 0 6px 0;
 }
+h2 {
+    color: white;
+}
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+}
+.link {  
+    text-decoration: none;
+    transition: 0.2s;
+    visibility: visible;
+}
+.link:hover {
+    transition: 0.2s ease-in-out;
+    transform: translateY(-5px);
+    color: white;
+}
+.ha4 {
+    color: white;
+    margin-top: 12px;
+    transition: 0.1s ease-in-out;
+}
+a:hover .ha4{
+    transform: translateY(-18px);
+    visibility: visible;
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Contact.module.css";
+import { GoMarkGithub } from "react-icons/go";
+import { GrLinkedin } from "react-icons/gr";
 
 export const Contact = () => {
   return (
@@ -8,16 +10,19 @@ export const Contact = () => {
       <Link to="/">
         <button>GO HOME</button>
       </Link>
-      <form style={{alignItems:"center", display:"flex", flexDirection:"column", margin:"20px 0 20px 0"}}>
-          <label>NAME:</label>
-          <input className={style.input} />
-          <label>LASTNAME:</label>
-          <input className={style.input} />
-          <label>EMAIL:</label>
-          <input className={style.input} />
-          <label>REASON:</label>
-          <textarea style={{width:"400px", height:"200px"}} />
-      </form>
+      <div style={{width:"20vw"}}>
+        <h2>SOCIAL MEDIA</h2>
+        <div className={style.socialmedia}>
+          <a href="https://github.com/DenisOrlando" target="_blank">
+            <GoMarkGithub className={style.link} size={100} />
+            <h4 className={style.ha4}>GITHUB</h4>
+          </a>
+          <a href="https://www.linkedin.com/in/denis-ferreyra/" target="_blank">
+            <GrLinkedin className={style.link} size={100} />
+            <h4 className={style.ha4}>LINKEDIN</h4>
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
