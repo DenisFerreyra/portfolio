@@ -66,7 +66,7 @@ export const Home = () => {
         </div>
       </div>
       <div className={style.containerProjects}>
-        <h2>MI PROJECTS</h2>
+        <h2>MY PROJECTS</h2>
         <div className={style.project}>
           <h4>16BIT GAMESTORE</h4>
           <div className={style.projectImg}>
@@ -117,8 +117,8 @@ export const Home = () => {
             </div>
             <div style={{ textAlign: "center", padding: "10px" }}>
               <div style={{ height: "70%" }}>
-                This is a groupal project maded for the Henry's bootcamp, in
-                this project we worked in front-end with: TypeScript, React,
+                This is a individual project maded for the Henry's bootcamp, in
+                this project we worked in front-end with: JavaScript, React,
                 Redux, and in the back-end we worked with JavaScript, Express,
                 NodeJS, PostgreSQL and Sequelize.
               </div>
