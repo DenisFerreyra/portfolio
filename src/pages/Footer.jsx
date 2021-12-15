@@ -12,7 +12,7 @@ export const Footer = () => {
         Copyright © Denis Ferreyra
       </span>
       <span style={{ display: "flex", justifyContent: "space-evenly" }}>
-        <a href="https://github.com/DenisOrlando" target="_blank">
+        <a href="https://github.com/DenisFer-13" target="_blank">
           <AiFillGithub
             size={30}
             style={{ marginRight: "10px", color: "white" }}
