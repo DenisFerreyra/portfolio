@@ -1,10 +1,10 @@
+import React from "react";
 import Particles from "react-particles-js";
 import params from "../particles-config";
 import img_two from "../img/2.jpg";
 import img_three from "../img/3.jpg";
 import img_pi_one from "../img/1.png";
 import img_pi_two from "../img/2.png";
-import React from "react";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import {
   SiJavascript,
@@ -17,11 +17,12 @@ import {
 } from "react-icons/si";
 import style from "./Home.module.css";
 
-export const Home = () => {
+export const Home = ({ firstEntry }) => {
+  console.log('--->',firstEntry);
   return (
     <>
       <Particles params={params} className="particles__container"></Particles>
-      <div className={style.container}>
+      <div className={firstEntry ? style.container : style.container2}>
         <h2>Hi there! I am</h2>
         <h1>DENIS FERREYRA</h1>
         <h3>Full Stack Developer</h3>
@@ -29,7 +30,7 @@ export const Home = () => {
           Passionate about programming, solving logic problems or graphic
           challenges, when I program, I don't feel like it's a job, I love
           programming and I feel like I'm playing. I have a lot to offer, if you
-          are interested, contact me in the form below. Regards.
+          are interested, contact me by Github or LunkedIn. Regards.
         </p>
       </div>
       <div className={style.tech}>

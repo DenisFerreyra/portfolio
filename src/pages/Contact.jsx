@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import style from "./Contact.module.css";
 import { GoMarkGithub } from "react-icons/go";
 import { GrLinkedin } from "react-icons/gr";
+import { useEffect } from "react/cjs/react.development";
 
 export const Contact = () => {
   return (
@@ -10,7 +11,7 @@ export const Contact = () => {
       <Link to="/">
         <button>GO HOME</button>
       </Link>
-      <div style={{width:"20vw"}}>
+      <div style={{ width: "20vw" }}>
         <h2>SOCIAL MEDIA</h2>
         <div className={style.socialmedia}>
           <a href="https://github.com/DenisFer-13" target="_blank">

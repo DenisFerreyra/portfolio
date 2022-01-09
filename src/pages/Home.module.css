@@ -18,6 +18,15 @@
   margin-top: 5vw;
   animation: aparicion 3s ease-in-out;
 }
+.container2 {
+  height: 50vh;
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vw;
+}
 h1 {
   cursor: default;
   letter-spacing: -0.5vw;

@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar = ({ handleEntry }) => {
   return (
     <ul className={style.ul}>
       <li
@@ -18,7 +18,9 @@ export const Navbar = () => {
         PROJECTS
       </li>
       <NavLink to="/contact" style={{ textDecoration: "none", color: "white" }}>
-        <li className={style.li}>CONTACT</li>
+        <li onClick={handleEntry} className={style.li}>
+          CONTACT
+        </li>
       </NavLink>
     </ul>
   );
