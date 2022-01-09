@@ -13,7 +13,7 @@ export const Contact = () => {
       <div style={{width:"20vw"}}>
         <h2>SOCIAL MEDIA</h2>
         <div className={style.socialmedia}>
-          <a href="https://github.com/DenisOrlando" target="_blank">
+          <a href="https://github.com/DenisFer-13" target="_blank">
             <GoMarkGithub className={style.link} size={100} />
             <h4 className={style.ha4}>GITHUB</h4>
           </a>
