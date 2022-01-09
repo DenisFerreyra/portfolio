@@ -133,20 +133,20 @@ p {
   align-items: center;
   justify-content: center;
 }
-.divH .div1 {
+.divH .div2 {
   position: absolute;
   transition: 0.4s;
-}
-.divH:hover .div1 {
-  opacity: 0;
-}
-.divH .div2 {
   width: 100px;
   height: 50px;
+}
+.divH:hover .div2 {
+  opacity: 0;
+}
+.divH .div1 {
   opacity: 0;
   transition: 0.7s;
 }
-.divH:hover .div2 {
+.divH:hover .div1 {
   opacity: 100;
 }
 @media screen and (max-width: 720px) {
