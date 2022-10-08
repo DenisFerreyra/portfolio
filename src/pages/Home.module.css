@@ -74,8 +74,9 @@ p {
   margin-top: 1vw 1vw 0 1vw;
 }
 .techD {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
 }
 .ulTech {
   color: white;
@@ -149,55 +150,66 @@ p {
 .divH:hover .div1 {
   opacity: 100;
 }
-@media screen and (max-width: 720px) {
-    .container {
-        width: 100%;
-    }
-    .tech {
-        width: 100%;
-        display: block;
-    }
-    h1 {
-        padding-top: 20px;
-        font-size: 35px;
-    }
-    h2 {
-        padding-top: 30px;
-        font-size: 20px;
-    }
-    h3 {
-        font-size: 24px;
-        text-align: center;
-    }
-    p {
-        padding-top: 4px;
-        font-size: 13px;
-    }
-    .techD {
-        width: 100%;
-        display: block;
-    }
-    .divH {
-        width: 90%;
-        margin: 0 5% 2% 5%;
-    }
-    .containerProjects {
-        margin: auto;
-    }
-    .project {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    h4 {
-        font-size: 14px;
-    }
-    .projectImg {
-        display: flex;
-        flex-direction: column;
-    }
-    .img {
-        width: 45%;
-    }
+@media screen and (max-width: 1300px) {
+  .techD {
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  .divH {
+    width: 100%;
+    margin: 0 1% 1% 1%;
+    flex: 0 1 calc(15% - 4px);
+  }
+}
+@media screen and (max-width: 760px) {
+  .container {
+    width: 100%;
+  }
+  .tech {
+    width: 100%;
+    display: block;
+  }
+  h1 {
+    padding-top: 20px;
+    font-size: 35px;
+  }
+  h2 {
+    padding-top: 30px;
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  p {
+    padding-top: 4px;
+    font-size: 13px;
+  }
+  .techD {
+    width: 100%;
+    display: block;
+  }
+  .divH {
+    width: 90%;
+    margin: 0 5% 2% 5%;
+  }
+  .containerProjects {
+    margin: auto;
+  }
+  .project {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  .projectImg {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    width: 45%;
+  }
 }

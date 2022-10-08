@@ -14,11 +14,15 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiSequelize,
+  SiNestjs,
+  SiExpress,
+  SiMysql,
+  SiMongodb,
 } from "react-icons/si";
+import { VscSymbolNamespace } from "react-icons/vsc";
 import style from "./Home.module.css";
 
 export const Home = ({ firstEntry }) => {
-  console.log('--->',firstEntry);
   return (
     <>
       <Particles params={params} className="particles__container"></Particles>
@@ -37,12 +41,24 @@ export const Home = ({ firstEntry }) => {
         <h3 style={{ padding: "30px" }}>TECHNOLOGIES</h3>
         <div className={style.techD}>
           <div className={style.divH}>
+            <div className={style.div1}>TYPESCRIPT </div>
+            <SiTypescript className={style.div2} />
+          </div>
+          <div className={style.divH}>
             <div className={style.div1}>JAVASCRIPT </div>
             <SiJavascript className={style.div2} />
           </div>
           <div className={style.divH}>
-            <div className={style.div1}>TYPESCRIPT </div>
-            <SiTypescript className={style.div2} />
+            <div className={style.div1}>NODE</div>
+            <SiNodedotjs className={style.div2} />
+          </div>
+          <div className={style.divH}>
+            <div className={style.div1}>NEST</div>
+            <SiNestjs className={style.div2} />
+          </div>
+          <div className={style.divH}>
+            <div className={style.div1}>EXPRESS</div>
+            <SiExpress className={style.div2} />
           </div>
           <div className={style.divH}>
             <div className={style.div1}>REACT</div>
@@ -53,12 +69,20 @@ export const Home = ({ firstEntry }) => {
             <SiRedux className={style.div2} />
           </div>
           <div className={style.divH}>
-            <div className={style.div1}>NODE</div>
-            <SiNodedotjs className={style.div2} />
+            <div className={style.div1}>MYSQL</div>
+            <SiMysql className={style.div2} />
+          </div>
+          <div className={style.divH}>
+            <div className={style.div1}>MONGODB</div>
+            <SiMongodb className={style.div2} />
           </div>
           <div className={style.divH}>
             <div className={style.div1}>POSTGRESQL</div>
             <SiPostgresql className={style.div2} />
+          </div>
+          <div className={style.divH}>
+            <div className={style.div1}>TYPEORM</div>
+            <VscSymbolNamespace className={style.div2} />
           </div>
           <div className={style.divH}>
             <div className={style.div1}>SEQUELIZE</div>
