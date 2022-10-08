@@ -1,6 +1,4 @@
 import React from "react";
-import Particles from "react-particles-js";
-import params from "../particles-config";
 import img_two from "../img/2.jpg";
 import img_three from "../img/3.jpg";
 import img_pi_one from "../img/1.png";
@@ -25,7 +23,6 @@ import style from "./Home.module.css";
 export const Home = ({ firstEntry }) => {
   return (
     <>
-      <Particles params={params} className="particles__container"></Particles>
       <div className={firstEntry ? style.container : style.container2}>
         <h2>Hi there! I am</h2>
         <h1>DENIS FERREYRA</h1>
